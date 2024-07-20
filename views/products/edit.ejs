@@ -1,0 +1,70 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Product</title>
+</head>
+
+<body>
+    <h1>Edit Product</h1>
+    <form action="/products/<%=product._id%>?_method=PUT" method="POST">
+        <label for="name">Product Name</label>
+        <input type="text" name="name" id="name" placeholder="product name" value="<%=product.name%>">
+        <label for="price">Price (Unit)</label>
+        <input type="number" id="price" name="price" placeholder="price" value="<%= product.price %>">
+        <label for="category">Select Category</label>
+        <select name="category" id="category">
+            <% for(let category of categories){ %>
+            <option value="<%=category%>" <%= product.category === category ? 'selected': '' %>><%=category%></option>
+            <% } %>
+        </select>
+        <button>Submit</button>
+    </form>
+
+    <a href="/products/<%=product._id%>">Cancel</a>
+
+</body>
+
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Product</title>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="card form-card">
+            <h1 class="card-title">Edit Product</h1>
+            <form action="/products/<%=product._id%>?_method=PUT" method="POST" class="form">
+                <div class="form-group">
+                    <label for="name" class="form-label">Product Name</label>
+                    <input type="text" name="name" id="name" class="form-input" placeholder="Product name" value="<%=product.name%>">
+                </div>
+                <div class="form-group">
+                    <label for="price" class="form-label">Price (Unit)</label>
+                    <input type="number" id="price" name="price" class="form-input" placeholder="Price" value="<%= product.price %>">
+                </div>
+                <div class="form-group">
+                    <label for="category" class="form-label">Select Category</label>
+                    <select name="category" id="category" class="form-select">
+                        <% for(let category of categories){ %>
+                        <option value="<%=category%>" <%= product.category === category ? 'selected': '' %>><%=category%></option>
+                        <% } %>
+                    </select>
+                </div>
+                <button type="submit" class="form-button">Submit</button>
+            </form>
+            <a href="/products/<%=product._id%>" class="cancel-link">Cancel</a>
+        </div>
+    </div>
+</body>
+
+</html>

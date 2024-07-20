@@ -1,0 +1,54 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= product.name %></title>
+</head>
+
+<body>
+    <h1><%= product.name %></h1>
+    <ul>
+        <li>Price: $<%= product.price%></li>
+        <li>Category: <a href="/products?category=<%= product.category%>"><%= product.category%></a></li>
+    </ul>
+    <a href="/products">All Products</a>
+    <a href="/products/<%=product._id%>/edit">Edit Product</a>
+    <form action="/products/<%=product._id%>?_method=DELETE" method="POST">
+        <button>Delete</button>
+    </form>
+
+</body>
+
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+   
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= product.name %></title>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="card product-details-container">
+            <h1 class="card-title"><%= product.name %></h1>
+            <ul class="product-details">
+                <li class="product-detail">Price: $<%= product.price %></li>
+                <li class="product-detail">Category: <a href="/products?category=<%= product.category %>" class="category-link"><%= product.category %></a></li>
+            </ul>
+            <a href="/products" class="all-products-link button-link">All Products</a>
+            <a href="/products/<%=product._id%>/edit" class="edit-product-link button-link">Edit Product</a>
+            <form action="/products/<%=product._id%>?_method=DELETE" method="POST">
+                <button type="submit" class="delete-button">Delete</button>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>

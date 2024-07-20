@@ -1,0 +1,66 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Product</title>
+</head>
+
+<body>
+    <h1>Add A Product</h1>
+    <form action="/products" method="POST">
+        <label for="name">Product Name</label>
+        <input type="text" name="name" id="name" placeholder="product name">
+        <label for="price">Price (Unit)</label>
+        <input type="number" id="price" name="price" placeholder="price">
+        <label for="category">Select Category</label>
+        <select name="category" id="category">
+            <% for(let category of categories){ %>
+            <option value="<%=category%>"><%=category%></option>
+            <% } %>
+        </select>
+        <button>Submit</button>
+    </form>
+
+</body>
+
+</html> -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Product</title>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="card form-card">
+            <h1 class="card-title">Add A Product</h1>
+            <form action="/products" method="POST" class="form">
+                <div class="form-group">
+                    <label for="name" class="form-label">Product Name</label>
+                    <input type="text" name="name" id="name" class="form-input" placeholder="Product name">
+                </div>
+                <div class="form-group">
+                    <label for="price" class="form-label">Price (Unit)</label>
+                    <input type="number" id="price" name="price" class="form-input" placeholder="Price">
+                </div>
+                <div class="form-group">
+                    <label for="category" class="form-label">Select Category</label>
+                    <select name="category" id="category" class="form-select">
+                        <% for(let category of categories){ %>
+                        <option value="<%=category%>"><%=category%></option>
+                        <% } %>
+                    </select>
+                </div>
+                <button type="submit" class="form-button">Submit</button>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>

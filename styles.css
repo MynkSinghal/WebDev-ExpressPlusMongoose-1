@@ -1,0 +1,234 @@
+/* Base Styles */
+:root {
+    --black: #000000ff;
+    --oxford-blue: #14213dff;
+    --orange-web: #fca311ff;
+    --platinum: #e5e5e5ff;
+    --white: #ffffffff;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--platinum);
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1 {
+    color: var(--oxford-blue);
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Card Styles */
+.card {
+    background-color: var(--white);
+    border: 1px solid var(--oxford-blue);
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 800px;
+}
+
+.card-title {
+    font-size: 24px;
+    color: var(--oxford-blue);
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.product-card,
+.form-card,
+.product-details-container {
+    margin-bottom: 20px;
+}
+
+/* Product List Styles */
+.product-list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.product-card {
+    background-color: var(--white);
+    border: 1px solid var(--oxford-blue);
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    width: 250px;
+    text-align: center;
+    padding: 15px;
+}
+
+.product-link {
+    text-decoration: none;
+    color: var(--oxford-blue);
+    font-size: 18px;
+}
+
+.product-link:hover {
+    color: var(--orange-web);
+    text-decoration: underline;
+}
+
+/* Form Styles */
+.form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.form-input,
+.form-select {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid var(--oxford-blue);
+    border-radius: 4px;
+}
+
+.form-button {
+    width: 100%;
+    padding: 10px;
+    background-color: var(--orange-web);
+    color: var(--white);
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    text-align: center;
+}
+
+.form-button:hover {
+    background-color: var(--oxford-blue);
+}
+
+/* Button-like Styles for Anchor Tags */
+.button-link {
+    display: inline-block; /* Makes the anchor behave like a block element */
+    background-color: var(--black); /* Same background color as delete button */
+    color: var(--white); /* Text color */
+    padding: 10px; /* Same padding */
+    border: none; /* No border */
+    border-radius: 4px; /* Same border radius */
+    cursor: pointer; /* Pointer cursor on hover */
+    font-size: 16px; /* Same font size */
+    text-align: center; /* Center the text */
+    text-decoration: none; /* Remove underline */
+    transition: background-color 0.3s; /* Smooth background color transition */
+}
+
+/* Hover effect for button-like anchor tags */
+.button-link:hover {
+    background-color: var(--orange-web); /* Change background color on hover */
+}
+
+.cancel-link,
+.new-product-link,
+.all-products-link,
+.edit-product-link,
+.category-link,
+.product-link {
+    display: block;
+    margin-top: 10px;
+    text-align: center;
+    color: var(--orange-web);
+    text-decoration: none;
+}
+
+.cancel-link:hover,
+.new-product-link:hover,
+.all-products-link:hover,
+.edit-product-link:hover,
+.category-link:hover,
+.product-link:hover {
+    color: var(--oxford-blue);
+    text-decoration: underline;
+}
+
+.delete-button {
+    background-color: var(--black);
+    color: var(--white);
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.delete-button:hover {
+    background-color: var(--orange-web);
+}
+
+/* Product Details Styles */
+.product-details-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--white);
+    border: 1px solid var(--oxford-blue);
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    max-width: 600px;
+    margin: 20px auto;
+}
+
+.product-details {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+
+.product-detail {
+    background-color: var(--platinum);
+    border: 1px solid var(--oxford-blue);
+    border-radius: 8px;
+    padding: 15px;
+    margin: 10px 0;
+    text-align: center;
+}
+
+.product-detail:nth-child(odd) {
+    background-color: var(--white);
+}
+
+.product-detail:last-child {
+    border-bottom: none;
+}
+
+.category-link,
+.all-products-link,
+.edit-product-link {
+    display: block;
+    margin-top: 10px;
+    text-align: center;
+    color: var(--orange-web);
+    text-decoration: none;
+}
+
+.category-link:hover,
+.all-products-link:hover,
+.edit-product-link:hover {
+    color: var(--oxford-blue);
+    text-decoration: underline;
+}

@@ -1,0 +1,53 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Products</title>
+</head>
+
+<body>
+    <h1><%= category%> Products!</h1>
+    <ul>
+        <% for(let product of products) { %>
+        <li><a href="/products/<%=product._id%>"><%= product.name %></a> </li>
+        <% }%>
+    </ul>
+    <a href="/products/new">New Product</a>
+    <%if(category !== 'All') {%>
+    <a href="/products">All Products</a>
+    <% } %>
+
+</body>
+
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Products</title>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="card-title"><%= category%> Products!</h1>
+        <ul class="product-list">
+            <% for(let product of products) { %>
+            <li class="product-card">
+                <a href="/products/<%=product._id%>" class="product-link"><%= product.name %></a>
+            </li>
+            <% }%>
+        </ul>
+        <a href="/products/new" class="new-product-link button-link">New Product</a>
+        <% if(category !== 'All') { %>
+        <a href="/products" class="all-products-link button-link">All Products</a>
+        <% } %>
+    </div>
+</body>
+
+</html>
