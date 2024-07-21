@@ -1,4 +1,4 @@
-/* Base Styles */
+
 :root {
     --black: #000000ff;
     --oxford-blue: #14213dff;
@@ -26,7 +26,7 @@ h1 {
     margin-bottom: 20px;
 }
 
-/* Card Styles */
+
 .card {
     background-color: var(--white);
     border: 1px solid var(--oxford-blue);
@@ -50,7 +50,7 @@ h1 {
     margin-bottom: 20px;
 }
 
-/* Product List Styles */
+
 .product-list {
     list-style: none;
     padding: 0;
@@ -81,7 +81,7 @@ h1 {
     text-decoration: underline;
 }
 
-/* Form Styles */
+
 .form {
     display: flex;
     flex-direction: column;
@@ -121,24 +121,24 @@ h1 {
     background-color: var(--oxford-blue);
 }
 
-/* Button-like Styles for Anchor Tags */
+
 .button-link {
-    display: inline-block; /* Makes the anchor behave like a block element */
-    background-color: var(--black); /* Same background color as delete button */
-    color: var(--white); /* Text color */
-    padding: 10px; /* Same padding */
-    border: none; /* No border */
-    border-radius: 4px; /* Same border radius */
-    cursor: pointer; /* Pointer cursor on hover */
-    font-size: 16px; /* Same font size */
-    text-align: center; /* Center the text */
-    text-decoration: none; /* Remove underline */
-    transition: background-color 0.3s; /* Smooth background color transition */
+    display: inline-block;
+    background-color: var(--black);
+    color: var(--white);
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+    transition: background-color 0.3s;
 }
 
-/* Hover effect for button-like anchor tags */
+
 .button-link:hover {
-    background-color: var(--orange-web); /* Change background color on hover */
+    background-color: var(--orange-web);
 }
 
 .cancel-link,
@@ -178,7 +178,7 @@ h1 {
     background-color: var(--orange-web);
 }
 
-/* Product Details Styles */
+
 .product-details-container {
     display: flex;
     flex-direction: column;
